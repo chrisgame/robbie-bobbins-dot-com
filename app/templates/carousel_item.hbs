@@ -1,0 +1,10 @@
+<div id="service-carousel" class="carousel slide">
+  {{view view.indicatorsView}}
+  {{view view.itemsView}}
+  <a class="left carousel-control" {{action previousSlide target="view"}}>
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" {{action nextSlide target="view"}}>
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
