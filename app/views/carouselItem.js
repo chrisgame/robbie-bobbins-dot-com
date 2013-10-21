@@ -36,11 +36,7 @@ var CarouselItemView = Ember.View.extend({
     itemViewClass: Ember.view.extend({
       classNames: ['item'],
       classNameBindings: ['content.isActive:active'],
-      template: Ember.Handlebars.compile('\
-        <img {{bindAttr src="view.content.imageUrl"}} alt=""/>\
-        <div class="carousel-caption">\
-          <p>{{view.content.description}}</p>\
-        </div>')
+      template: Ember.Handlebars.compile('<img {{bindAttr src="view.content.imageUrl"}} alt=""/><div class="carousel-caption"><p>{{view.content.description}}</p></div>')
     })
   })
 });
