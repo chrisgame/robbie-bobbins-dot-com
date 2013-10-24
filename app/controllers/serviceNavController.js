@@ -4,3 +4,4 @@ var ServiceNavController = Ember.ObjectController.extend({
   }.property('email')
 });
 
+export default ServiceNavController;

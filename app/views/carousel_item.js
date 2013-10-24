@@ -33,10 +33,12 @@ var CarouselItemView = Ember.View.extend({
   itemsView: Ember.CollectionView.extend({
     classNames: ['carousel-inner'],
     contentBinding: 'parentView.content',
-    itemViewClass: Ember.view.extend({
+    itemViewClass: Ember.View.extend({
       classNames: ['item'],
       classNameBindings: ['content.isActive:active'],
       template: Ember.Handlebars.compile('<img {{bindAttr src="view.content.imageUrl"}} alt=""/><div class="carousel-caption"><p>{{view.content.description}}</p></div>')
     })
   })
 });
+
+export default CarouselItemView;
